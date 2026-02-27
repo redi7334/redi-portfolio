@@ -3,110 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redi | Web Developer</title>
-
+  <title>Redi Mema | Web Developer</title>
+  <meta name="description" content="Redi Mema - Web Developer. Building modern websites and full-stack apps." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <header class="header">
-  <nav class="nav">
-    <h1 class="logo">Redi</h1>
-    <ul class="nav-links">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+  <header class="header" id="home">
+    <nav class="nav">
+      <div class="logo">Redi</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  </nav>
+    <div class="hero">
+      <h1>Hi, I’m Redi</h1>
+      <p>Aspiring Web Developer building modern websites & full-stack apps.</p>
 
-  <div class="hero" id="home">
-    <h2>Hi, I’m Redi 👋</h2>
-    <p>Aspiring Web Developer building modern websites</p>
-  </div>
-</header>
-
+      <div class="hero-cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </header>
 
   <main class="main">
-    <main class="main">
-  <section class="intro" id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a web developer passionate about building clean and modern web applications.
-    </p>
-  </section>
+    <section class="intro" id="about">
+      <h2>About Me</h2>
+      <p>
+        I build clean, responsive websites and I’m currently leveling up with Django REST APIs + React.
+        I care about good UI, clean code, and real-world projects.
+      </p>
 
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
+      <div class="badges">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Python</span>
+        <span class="badge">Django</span>
+        <span class="badge">PostgreSQL</span>
+        <span class="badge">Docker</span>
+      </div>
+    </section>
 
-        <div class="project-grid">
-      <!-- cards here -->
-    </div>
-  </section>
-  
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Expense Tracker API (Django REST)</h3>
+          <p>
+            REST API for tracking income/expenses with categories + analytics endpoints.
+            Docker + Postgres ready.
+          </p>
+          <div class="project-links">
+            <a class="btn" href="https://github.com/redi7334/Expence-tracker-api" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn btn-outline" href="#" aria-disabled="true">Live (soon)</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio site built with HTML, CSS, and JavaScript.</p>
+          <div class="project-links">
+            <a class="btn" href="https://buildwithredi.netlify.app" target="_blank" rel="noreferrer">Live</a>
+            <a class="btn btn-outline" href="https://github.com/redi7334/redi-portfolio" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Full-Stack App (Coming Soon)</h3>
+          <p>Next: React dashboard + auth + database + charts (real deployment).</p>
+          <div class="project-links">
+            <a class="btn" href="#" aria-disabled="true">Live (soon)</a>
+            <a class="btn btn-outline" href="#" aria-disabled="true">Code (soon)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="contact" id="contact">
-  <h2>Contact</h2>
-  <p>If you want to work together, send me a message.</p>
+      <h2>Contact</h2>
+      <p>If you want to work together, send me a message.</p>
 
-  <form class="contact-form">
-    <label>
-      Your Name
-      <input type="text" placeholder="Enter your name" required />
-    </label>
+      <form class="contact-form">
+        <label>
+          Your Name
+          <input type="text" name="name" required />
+        </label>
 
-    <label>
-      Email
-      <input type="email" placeholder="Enter your email" required />
-    </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
 
-    <label>
-      Message
-      <textarea rows="5" placeholder="Write your message..." required></textarea>
-    </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
 
-    <button type="submit" class="btn">Send</button>
-  </form>
-</section>
-
-
-    <div class="project-grid">
-      <article class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A responsive portfolio site built with HTML, CSS, and JavaScript.</p>
-        <div class="project-links">
-          <a href="#" class="btn">Live</a>
-          <a href="#" class="btn btn-outline">Code</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3>To-Do App</h3>
-        <p>A simple CRUD app to practice DOM manipulation and localStorage.</p>
-        <div class="project-links">
-          <a href="#" class="btn">Live</a>
-          <a href="#" class="btn btn-outline">Code</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3>Coming Soon</h3>
-        <p>Next project will be a full-stack app with login + database.</p>
-        <div class="project-links">
-          <a href="#" class="btn">Live</a>
-          <a href="#" class="btn btn-outline">Code</a>
-        </div>
-      </article>
-    </div>
-  </section>
-</main>
-
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
   </main>
-<footer class="footer">
-  <p>© 2026 Redi Mema. Built with ❤️ and JavaScript.</p>
-</footer>
 
-  <script src="./js/main.js"></script>
+  <footer class="footer">
+    © <span id="year"></span> Redi Mema. Built with ❤️ and JavaScript.
+  </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
