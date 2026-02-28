@@ -207,3 +207,36 @@ body {
   .hero h1 { font-size: 2rem; }
   .nav-links { gap: 0.8rem; font-size: 0.95rem; }
 }
+
+.hero {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* smoother button feel */
+.btn {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.is-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
